@@ -1,16 +1,31 @@
-# React + Vite
+# Atividade: Teste de Integração entre Frontend e Backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém a resolução da atividade de Laboratório de Desenvolvimento de Software, que consiste na criação de um backend (API), um frontend (interface de usuário) e testes de integração ponta a ponta (E2E) para validar a comunicação entre eles.
 
-Currently, two official plugins are available:
+## Requisitos Técnicos Utilizados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Backend
+*   **Linguagem:** Node.js
+*   **Framework:** Express.js
+*   **Testes:** Jest, Supertest
+*   **Outros:** `uuid` para geração de IDs únicos, `cors` para permitir comunicação com o frontend.
 
-## React Compiler
+### Frontend
+*   **Framework:** React (com Vite)
+*   **Biblioteca HTTP:** Axios
+*   **Testes:** Vitest, React Testing Library
+*   **Testes E2E:** Cypress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como Rodar o Projeto
 
-## Expanding the ESLint configuration
+Para executar o projeto, siga os passos abaixo:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Iniciar o Backend
+
+Abra um terminal no diretório `integration-activity/backend`.
+
+```bash
+cd backend
+npm install
+npm start
+O backend estará rodando em http://localhost:3000. Deixe este terminal aberto
